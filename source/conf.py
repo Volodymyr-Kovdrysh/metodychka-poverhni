@@ -33,3 +33,13 @@ language = 'uk'
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 myst_enable_extensions = ["deflist", "colon_fence", "attrs_block", "attrs_inline","fieldlist"]
+latex_additional_files = ["mystyle.sty", "_latex/custom.cls"]
+
+latex_documents = [
+    ('index', 'project.tex', 'Назва Проекту', 'Автори', 'custom'),  # manual замініть на custom
+]
+
+latex_elements = {
+    'papersize': 'a5paper',
+    'inputenc': r'\usepackage[utf8]{inputenc}',
+    'preamble': r'\usepackage{mystyle}'      }
