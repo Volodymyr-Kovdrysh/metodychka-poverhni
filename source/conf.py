@@ -32,7 +32,14 @@ language = 'uk'
 
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
-myst_enable_extensions = ["deflist", "colon_fence", "attrs_block", "attrs_inline","fieldlist"]
+myst_enable_extensions = [
+  "deflist",
+  "dollarmath", 
+  "amsmath", 
+  "colon_fence", 
+  "attrs_block", 
+  "attrs_inline",
+  "fieldlist"]
 latex_additional_files = ["mystyle.sty", "_latex/custom.cls"]
 
 latex_documents = [
