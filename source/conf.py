@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Методичка'
-copyright = '2025, Вадими МИРОНИК, Володимир КОВДРИШ'
-author = 'Вадими МИРОНИК, Володимир КОВДРИШ'
+copyright = '2025, Руслана КОЛІСНИК, Вадими МИРОНИК, Володимир КОВДРИШ'
+author = 'Руслана КОЛІСНИК, Вадими МИРОНИК, Володимир КОВДРИШ'
 release = '0.0.0'
 
 # -- General configuration ---------------------------------------------------
@@ -40,13 +40,19 @@ myst_enable_extensions = [
   "attrs_block", 
   "attrs_inline",
   "fieldlist"]
+
+
+# -- Options for LaTeX output ------------------------------------------------
+TITLE = open('title.tex', 'r').read()
 latex_additional_files = ["mystyle.sty", "_latex/custom.cls"]
 
 latex_documents = [
-    ('index', 'project.tex', 'Назва Проекту', 'Автори', 'custom'),  # manual замініть на custom
+    ('index', 'project.tex', 'Назва Проекту', author, 'custom'),  # manual замініть на custom
 ]
 
 latex_elements = {
     'papersize': 'a5paper',
     'inputenc': r'\usepackage[utf8]{inputenc}',
-    'preamble': r'\usepackage{mystyle}'      }
+    'preamble': r'\usepackage{mystyle}',
+    'maketitle': TITLE, 
+    }
