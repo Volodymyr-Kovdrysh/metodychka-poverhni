@@ -2,7 +2,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{fancybook}[2025/06/07 Custom memoir-based class]
 
-\LoadClass[12pt,twoside,openany,x11names,svgnames,ukrainian]{memoir}
+\LoadClass[12pt,twoside,openany,ukrainian]{memoir}
 
 % --- Налаштування для формату A5 (210мм × 148мм) ---
 \setstocksize{210mm}{148mm} % фізичний розмір паперу
