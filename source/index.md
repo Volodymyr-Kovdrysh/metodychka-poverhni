@@ -2,7 +2,8 @@
 
 .. raw:: latex
 
-    \pagebreak
+    \chapterstyle{FancyChap}
+    
 
 ```
 

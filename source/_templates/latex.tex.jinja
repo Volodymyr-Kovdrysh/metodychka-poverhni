@@ -1,0 +1,25 @@
+\def\sphinxdocclass{fancybook}
+
+\documentclass[ukrainian]{fancybook}
+<%= sphinxsetup %>
+\usepackage{sphinx}            % Core Sphinx macros
+\usepackage{sphinxmessages}
+
+<%= preamble %>
+
+\author{<%= author %>}
+
+
+<%= makeindex %>
+
+\begin{document}
+\pagestyle{empty}
+<%= maketitle %>
+
+<%= tableofcontents %>
+<%= body %>
+<%= atendofbody %>
+<%= indices %>
+\renewcommand{\indexname}{<%= _('Index') | e %>}
+<%= printindex %>
+\end{document}

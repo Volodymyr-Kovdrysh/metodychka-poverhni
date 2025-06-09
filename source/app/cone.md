@@ -1,3 +1,11 @@
+```{eval-rst}
+
+.. raw:: latex
+
+    \chapterstyle{FancyChap}
+
+```
+
 # Конус другого порядку
 
 :::{admonition} Означення

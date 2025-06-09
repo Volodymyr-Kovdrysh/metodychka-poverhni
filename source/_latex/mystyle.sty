@@ -1,0 +1,57 @@
+% Встановлення розмірів сторінки для A5
+
+
+% % Колонтитули
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyhf{}
+% \rhead{\thepage}
+% \lhead{Назва Проекту}
+
+% Заголовки
+\usepackage{titlesec}
+\titleformat{\chapter}[block]{\Large\bfseries}{\S \thechapter}{1em}{}
+\titleformat{\section}[hang]{\large\bfseries}{\thesection}{1em}{}
+
+% Додаткові стилі для класу
+\renewcommand{\chaptername}{Розділ}
+\renewcommand{\thesection}{\arabic{section}}
+
+% Визначаємо стиль розділів
+\makechapterstyle{FancyChap}{
+    \setlength\beforechapskip{0pt}
+    \setlength\midchapskip{0pt}
+    \setlength\afterchapskip{47mm}
+
+    \renewcommand*\printchaptername{}
+    \renewcommand*\printchapternum{}
+
+    \def\printchaptertitle##1{
+        \begin{tikzpicture}[remember picture,overlay]
+            \fill[fill=LightSalmon1,opacity=.7]
+            (current page.north west) rectangle
+            ([yshift=-3cm] current page.north east);
+        \end{tikzpicture}
+
+        \strictpagecheck\checkoddpage
+        \ifoddpage
+            \begin{tikzpicture}[remember picture, overlay]
+            \node[fill=Sienna!80!black,text=white,
+                font=\Huge\bfseries, 
+                inner ysep=12pt, inner xsep=20pt,
+                rounded rectangle,anchor=east, 
+                xshift=-20mm,yshift=-30mm] 
+                at (current page.north east) {##1};
+            \end{tikzpicture}
+        \else
+            \begin{tikzpicture}[remember picture, overlay]
+            \node[fill=Sienna!80!black,text=white,
+                font=\Huge\bfseries,
+                inner sep=12pt, inner xsep=20pt,
+                rounded rectangle,anchor=west,
+                xshift=20mm,yshift=-30mm] 
+                at (current page.north west) {##1};
+            \end{tikzpicture}
+        \fi
+    }
+}
