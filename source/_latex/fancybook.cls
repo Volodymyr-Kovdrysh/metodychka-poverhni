@@ -3,6 +3,8 @@
 \ProvidesClass{fancybook}[2025/06/07 Custom memoir-based class]
 
 \LoadClass[12pt,twoside,openany,ukrainian]{memoir}
+\PassOptionsToPackage{svgnames,table,x11names}{xcolor}
+
 
 % --- Налаштування для формату A5 (210мм × 148мм) ---
 \setstocksize{210mm}{148mm} % фізичний розмір паперу
@@ -32,7 +34,7 @@
 \RequirePackage{paratype}
 \RequirePackage{amsmath}
 \RequirePackage{wallpaper}
-\RequirePackage[svgnames,table,x11names]{xcolor}
+\RequirePackage{xcolor}
 \RequirePackage{tikz}
 \usetikzlibrary{shapes,positioning}
 \RequirePackage{lipsum}
