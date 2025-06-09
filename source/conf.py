@@ -49,6 +49,9 @@ myst_enable_extensions = [
 # -- Options for LaTeX output ------------------------------------------------
 with open('_latex/title.tex', 'r') as f:
     TITLE = f.read()
+
+
+
 latex_additional_files = ["_latex/fancybook.cls",]# "_latex/mystyle.sty"]
 
 latex_documents = [

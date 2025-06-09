@@ -28,7 +28,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{graphicx}
 \RequirePackage[english,ukrainian]{babel}
-\RequirePackage{sphinx}
+% \RequirePackage{sphinx}
 
 \RequirePackage{indentfirst}
 \RequirePackage{paratype}
@@ -39,6 +39,7 @@
 \usetikzlibrary{shapes,positioning}
 \RequirePackage{lipsum}
 \RequirePackage[ISBN=978-80-85955-35-4]{ean13isbn}
+
 \tolerance=9999
 
 
@@ -50,21 +51,21 @@
 }
 
 
-% \newcommand{\sphinxhyphen}{-}
-% \newcommand{\sphinxAtStartPar}{}
-% \newenvironment{sphinxadmonition}[2]{%
-%   \par\medskip
-%   \noindent\textbf{#2.}%
-%   \begin{quote}
-% }{%
-%   \end{quote}\medskip
-% }
+\newcommand{\sphinxhyphen}{-}
+\newcommand{\sphinxAtStartPar}{}
+\newenvironment{sphinxadmonition}[2]{%
+  \par\medskip
+  \noindent\textbf{#2.}%
+  \begin{quote}
+}{%
+  \end{quote}\medskip
+}
 
-% \newcommand{\sphinxincludegraphics}[2][]{%
-%   \noindent{\hspace*{\fill}\includegraphics[#1]{#2}\hspace*{\fill}}%
-% }
+\newcommand{\sphinxincludegraphics}[2][]{%
+  \noindent{\hspace*{\fill}\includegraphics[#1]{#2}\hspace*{\fill}}%
+}
 
-% \newcommand{\sphinxstyleemphasis}[1]{\emph{#1}}
+\newcommand{\sphinxstyleemphasis}[1]{\emph{#1}}
 
 
 %% Command to hold chapter illustration image
@@ -327,10 +328,10 @@ at (current page.north){Cum reverentia lectoribus};
   \setcounter{footnote}{0}%
   \let\thanks\relax
 }
-% \newcommand{\sphinxstepscope}{%
-%   % За замовчуванням нічого не робить
-%   % Якщо потрібно — тут можна встановити інший стиль
-% }
+\newcommand{\sphinxstepscope}{%
+  % За замовчуванням нічого не робить
+  % Якщо потрібно — тут можна встановити інший стиль
+}
 \makeatother
 
 
