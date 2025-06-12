@@ -7,7 +7,7 @@
 
 ```
 
-# 🔎 Overview
+# 🔎 Зміст
 
 ```{toctree}
 :maxdepth: 2

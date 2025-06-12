@@ -35,7 +35,23 @@ language = 'uk'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_book_theme'
+html_theme_options = {
+    "repository_url": "https://github.com/Volodymyr-Kovdrysh/metodychka-poverhni",
+    "repository_branch": "main",
+    "path_to_docs": "source",
+    "use_source_button": True,
+    # "use_repository_button": True,
+    "use_issues_button": True,
+    "use_edit_page_button": True,
+    "home_page_in_toc": False,
+    "show_navbar_depth": 2,
+    "toc_title": "{your-title}",
+    "show_toc_level": 2
+}
+html_title = booktitle
 html_static_path = ['_static']
+
+
 myst_enable_extensions = [
   "deflist",
   "dollarmath", 

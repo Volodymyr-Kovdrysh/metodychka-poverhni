@@ -38,7 +38,7 @@
 \RequirePackage{tikz}
 \usetikzlibrary{shapes,positioning}
 \RequirePackage{lipsum}
-\RequirePackage[ISBN=978-80-85955-35-4]{ean13isbn}
+\RequirePackage[ISBN=000-00-00000-00-0]{ean13isbn}
 
 \tolerance=9999
 
