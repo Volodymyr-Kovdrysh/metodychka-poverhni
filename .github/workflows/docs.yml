@@ -34,7 +34,7 @@ jobs:
     - name: Copy static PDF
       run: |
         mkdir -p build/html/_static
-        cp source/_static/project.pdf build/html/_static/project.pdf
+        cp docs/_static/project.pdf build/html/_static/project.pdf
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
