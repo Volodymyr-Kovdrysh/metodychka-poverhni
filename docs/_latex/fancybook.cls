@@ -40,6 +40,7 @@
 \RequirePackage{lipsum}
 \RequirePackage[ISBN=000-00-00000-00-0]{ean13isbn}
 
+
 \tolerance=9999
 
 

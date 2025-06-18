@@ -52,6 +52,7 @@ html_title = booktitle
 html_static_path = ['_static']
 
 
+
 myst_enable_extensions = [
   "deflist",
   "dollarmath", 
