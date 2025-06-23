@@ -38,7 +38,7 @@ html_theme = 'sphinx_book_theme'
 html_theme_options = {
     "repository_url": "https://github.com/Volodymyr-Kovdrysh/metodychka-poverhni",
     "repository_branch": "dev",
-    "path_to_docs": "source",
+    "path_to_docs": "docs",
     "use_source_button": True,
     # "use_repository_button": True,
     "use_issues_button": True,
