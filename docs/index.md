@@ -11,7 +11,7 @@
 
    <a class="sd-btn sd-btn-secondary sd-shadow-sm sd-font-weight-bold"
       href="_static/project.pdf" target="_blank" rel="noopener">
-   📄 Друк у форматі PDF
+   📄 Переглянути у форматі PDF
    </a>
 
 ```
